@@ -8,7 +8,6 @@
                 place-holder-body="请输入文章内容"
                 :title-text="draft.title"
                 :body-text="draft.body"
-
         >
             <div slot="bottom-right">
 

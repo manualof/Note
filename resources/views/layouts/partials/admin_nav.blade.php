@@ -13,7 +13,7 @@
     <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="/">
-                博客首页
+                首页
             </a>
         </div>
 

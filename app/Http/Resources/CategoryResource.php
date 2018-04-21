@@ -18,7 +18,7 @@ class CategoryResource extends Resource
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'created_at' => $this->created_at->toDateTimeString()
+            //'created_at' => $this->created_at->toDateTimeString()
         ];
 
     }

@@ -12,9 +12,7 @@
                     <hr>
                     <page-md-editor :page-id="{{$page->id}}"></page-md-editor>
 
-
                 </div>
-
 
             </div>
 
