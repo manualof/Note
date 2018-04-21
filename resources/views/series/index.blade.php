@@ -6,7 +6,7 @@
 
 @section('banner')
 
-    <section class="hero is-medium is-primary is-bold">
+    <section class="hero is-medium is-primary is-bold" style="margin-top: 60px">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -15,7 +15,14 @@
                 <h2 class="subtitle">
                     发现好课程
                 </h2>
+
+                @if(Auth::user() && Auth::user()->is_admin && false)
+                    <div style="position: absolute;right: 10px;bottom: 10px">
+                        <a href="{{ route('series.create') }}" class="button">添加课程</a>
+                    </div>
+                @endif
             </div>
+
         </div>
     </section>
 
@@ -27,7 +34,7 @@
         <div class="columns is-multiline">
 
             @foreach($series as $item)
-                <a class="column is-3" href="#">
+                <a class="column is-3" href="{{ $item->path() }}">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image is-4by3">
@@ -59,14 +66,9 @@
     <style>
 
         #app > .container{
-
             padding-top: 0;
-
         }
-
-
     </style>
-
 
 @endsection
 
