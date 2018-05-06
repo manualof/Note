@@ -4032,7 +4032,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             spellChecker: false
         });
 
-        //this.simplemde.toggleFullScreen()
+        this.simplemde.toggleFullScreen();
         this.simplemde.toggleSideBySide();
 
         this.simplemde.codemirror.on("change", function () {

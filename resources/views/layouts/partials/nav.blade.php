@@ -19,9 +19,9 @@
         <div id="navMenuTransparentExample" class="navbar-menu">
             <div class="navbar-start">
 
-                <a class="navbar-item {{ Request::is('series*') ? 'is-active' : '' }}" href="/series">
+                <!--<a class="navbar-item {{ Request::is('series*') ? 'is-active' : '' }}" href="/series">
                     课程
-                </a>
+                </a> -->
 
                 <a class="navbar-item {{ Request::is('articles*') ? 'is-active' : '' }}" href="/articles">
                     文章

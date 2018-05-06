@@ -11662,7 +11662,7 @@ a.navbar-link.is-active {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin-right: auto;
+   
   }
 
   .navbar-end {
@@ -18013,7 +18013,8 @@ label.panel-block:hover {
 }
 
 .body {
-  background-color: #eee;
+  /*background-color: #eee;*/
+  background: #f5f7f9;
 }
 
 .slide-menu {

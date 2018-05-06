@@ -15,10 +15,6 @@ export default [
             {
                 path: 'home',
                 component: require('./components/Home/Main.vue')
-            },
-            {
-                path: 'admin',
-                component: require('./components/Admin/Main.vue')
             }
         ]
 

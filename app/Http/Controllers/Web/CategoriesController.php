@@ -16,8 +16,6 @@ class CategoriesController extends Controller
             ->limit(10)
             ->get();
 
-
-
         return $categories;
     }
     public function create()
@@ -33,9 +31,10 @@ class CategoriesController extends Controller
         ]);
 
         Category::create($request->only('name','slug'));
+        return redirect('/')->withSuccess('添加成功');
 
-        alert('分类添加成功','success');
-        return back();
+        //alert('分类添加成功','success');
+        //return back();
 
     }
 
